@@ -1,4 +1,5 @@
 import './globals.css'
+import { NavBar } from './components/nav-bar'
 
 export const metadata = {
   title: 'Nextjs App',
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   )
 }
